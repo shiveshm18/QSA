@@ -58,26 +58,26 @@
     </button>
 
   </div>
-
-  <!-- Mobile Menu -->
-  <div
-    id="mobileMenu"
-    class="hidden md:hidden border-t bg-white"
-  >
-    <nav class="flex flex-col gap-4 px-6 py-4 text-sm font-medium uppercase">
-      <a href="./index.html" data-nav="home" class="nav-link hover:text-red-600 transition">Home</a>
-      <a href="./men.html" data-nav="men" class="nav-link hover:text-red-600 transition">Men</a>
-      <a href="./women.html"  data-nav="women" class="nav-link hover:text-red-600 transition">Women</a>
-      <a href="./kids.html" data-nav="kids" class="nav-link hover:text-red-600 transition">Kids</a>
-      <a href="./manufacturing.html" data-nav="manufacturing" class="nav-link hover:text-red-600 transition">Manufacturing</a>
-      <a href="./About.html" data-nav="about" class="nav-link hover:text-red-600 transition">About</a>      
-    </nav>
-
-  </div>
 </header>
-
-
+   <!-- Mobile Menu -->
+<div
+  id="mobileMenu"
+  style="display:none;"
+  class="md:hidden border-t bg-white"
+>
+  <nav class="flex flex-col gap-4 px-6 py-4 text-sm font-medium uppercase">
+    <a href="./index.html">Home</a>
+    <a href="./men.html">Men</a>
+    <a href="./women.html">Women</a>
+    <a href="./kids.html">Kids</a>
+    <a href="./manufacturing.html">Manufacturing</a>
+    <a href="./About.html">About</a>
+  </nav>
+</div>
 </div> <!-- closing div tag for sticky wrapper -->
+
+  
+
   <!-- HERO -->
   <section class="py-20 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -392,12 +392,15 @@
 
 <script>
   // 🔹 Mobile menu toggle
-  const menuBtn = document.getElementById('menuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-  menuBtn?.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.style.display =
+        mobileMenu.style.display === "block" ? "none" : "block";
+    });
+  }
 
   // 🔹 Sticky header shadow
   const stickyHeader = document.querySelector('.sticky');

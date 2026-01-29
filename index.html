@@ -11,7 +11,7 @@
 <body class="bg-white text-gray-900">
 
 <!-- Navbar -->
-<header  id="navbar" class="relative border-b sticky top-0 bg-white z-50 transition-shadow duration-300">
+<header  id="navbar" class="border-b sticky top-0 bg-white z-50 transition-shadow duration-300">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
 
     <!-- Logo -->
@@ -58,11 +58,19 @@
 
   <!-- Mobile Menu -->
  <div
-  id="mobileMenu"
-  style="display:block; background:red; height:200px;"
->
-  MENU IS HERE
-</div>
+    id="mobileMenu"
+    class="hidden md:hidden border-t bg-white"
+  >
+    <nav class="flex flex-col gap-4 text-sm font-medium uppercase">
+      <a href="./index.html" data-nav="home" class="nav-link hover:text-red-600 transition">Home</a>
+      <a href="./men.html" data-nav="men" class="nav-link hover:text-red-600 transition">Men</a>
+      <a href="./women.html"  data-nav="women" class="nav-link hover:text-red-600 transition">Women</a>
+      <a href="./kids.html" data-nav="kids" class="nav-link hover:text-red-600 transition">Kids</a>
+      <a href="./manufacturing.html" data-nav="manufacturing" class="nav-link hover:text-red-600 transition">Manufacturing</a>
+      <a href="./About.html" data-nav="about" class="nav-link hover:text-red-600 transition">About</a>      
+    </nav>
+
+  </div>
 
 </header>
 
@@ -448,16 +456,15 @@
 </script>
 
 <script>
-alert("MENU SCRIPT RUNNING");
- const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
 
-if (menuBtn && mobileMenu) {
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-}
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
 
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
 
   const stickyHeader = document.querySelector('.sticky')
   if (stickyHeader) {

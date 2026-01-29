@@ -58,9 +58,9 @@
 
   <!-- Mobile Menu -->
   <div
-    id="mobileMenu"
-    class="hidden border-t bg-white"
-  >
+  id="mobileMenu"
+  class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t z-50"
+>
     <nav class="flex flex-col gap-4 px-6 py-4 text-sm font-medium uppercase">
       <a href="./index.html" data-nav="home" class="nav-link hover:text-red-600 transition">Home</a>
       <a href="./men.html" data-nav="men" class="nav-link hover:text-red-600 transition">Men</a>
@@ -455,12 +455,15 @@
 </script>
 
 <script>
-  const menuBtn = document.getElementById('menuBtn')
-  const mobileMenu = document.getElementById('mobileMenu')
+ const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-  menuBtn?.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden')
-  })
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+}
+
 
   const stickyHeader = document.querySelector('.sticky')
   if (stickyHeader) {

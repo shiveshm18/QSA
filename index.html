@@ -58,20 +58,12 @@
 </header>
 
   <!-- Mobile Menu -->
- <div
+<div
   id="mobileMenu"
-  class="hidden md:hidden border-t bg-white z-40"
+  style="display:none; background:red; padding:20px;"
 >
-    <nav class="flex flex-col gap-4 px-6 py-4 text-sm font-medium uppercase">
-      <a href="./index.html" data-nav="home" class="nav-link hover:text-red-600 transition">Home</a>
-      <a href="./men.html" data-nav="men" class="nav-link hover:text-red-600 transition">Men</a>
-      <a href="./women.html"  data-nav="women" class="nav-link hover:text-red-600 transition">Women</a>
-      <a href="./kids.html" data-nav="kids" class="nav-link hover:text-red-600 transition">Kids</a>
-      <a href="./manufacturing.html" data-nav="manufacturing" class="nav-link hover:text-red-600 transition">Manufacturing</a>
-      <a href="./About.html" data-nav="about" class="nav-link hover:text-red-600 transition">About</a>      
-    </nav>
-
-  </div>
+  MOBILE MENU TEST
+</div>
 
 <!-- Hero Section -->
 <section class="bg-gray-100">
@@ -454,15 +446,16 @@
 </script>
 
 <script>
-
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  }
+  menuBtn.addEventListener("click", () => {
+    if (mobileMenu.style.display === "block") {
+      mobileMenu.style.display = "none";
+    } else {
+      mobileMenu.style.display = "block";
+    }
+  });
 
   const stickyHeader = document.querySelector('.sticky')
   if (stickyHeader) {

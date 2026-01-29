@@ -1,10 +1,1026 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Men</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men | Quick Stitch Apparel</title>
+ 
 </head>
-<body>
-  <h1>Men Collection</h1>
-  <img src="./categories/mens.jpg">
+
+<body class="bg-white text-gray-900">
+
+    <!-- Sticky Header and breadcrumb Wrapper -->
+<div class="sticky top-0 z-50 bg-white transition-shadow duration-300 ">
+
+<!-- Navbar -->
+<header  id="navbar" class="border-b bg-white">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-5">
+      <div class="w-16 h-16 border border-gray-300 bg-white shadow-sm
+          flex items-center justify-center">
+        <img
+          src="./logo/logo.png"
+          alt="Quick Stitch Apparel"
+          class="w-full h-full object-contain"
+        />
+      </div>
+
+
+      <div class="leading-[1.15]">
+        <p class="text-m font-bold tracking-[0.25em] text-gray-600">
+          QUICK
+        </p>
+        <p class="text-xl font-bold tracking-wide text-gray-900">
+          STITCH APPAREL
+        </p>
+      </div>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-8 text-sm font-medium uppercase">
+      <a href="./index.html" data-nav="home" class="nav-link hover:text-red-600 transition">Home</a>
+      <a href="./men.html" data-nav="men" class="nav-link hover:text-red-600 transition">Men</a>
+      <a href="./women.html"  data-nav="women" class="nav-link hover:text-red-600 transition">Women</a>
+      <a href="./kids.html" data-nav="kids" class="nav-link hover:text-red-600 transition">Kids</a>
+      <a href="./manufacturing.html" data-nav="manufacturing" class="nav-link hover:text-red-600 transition">Manufacturing</a>
+      <a href="./About.html" data-nav="about" class="nav-link hover:text-red-600 transition">About</a>      
+    </nav>
+
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="menuBtn"
+      class="md:hidden text-2xl focus:outline-none"
+    >
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="hidden md:hidden border-t bg-white"
+  >
+    <nav class="flex flex-col gap-4 text-sm font-medium uppercase">
+      <a href="./index.html" data-nav="home" class="nav-link hover:text-red-600 transition">Home</a>
+      <a href="./men.html" data-nav="men" class="nav-link hover:text-red-600 transition">Men</a>
+      <a href="./women.html"  data-nav="women" class="nav-link hover:text-red-600 transition">Women</a>
+      <a href="./kids.html" data-nav="kids" class="nav-link hover:text-red-600 transition">Kids</a>
+      <a href="./manufacturing.html" data-nav="manufacturing" class="nav-link hover:text-red-600 transition">Manufacturing</a>
+      <a href="./About.html" data-nav="about" class="nav-link hover:text-red-600 transition">About</a>      
+    </nav>
+
+  </div>
+</header>
+
+</div> <!-- closing div tag for sticky wrapper -->
+
+  <!-- Page Header -->
+  <section class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight uppercase">
+        Men
+      </h1>
+      <p class="mt-4 text-gray-600">
+  Bulk apparel manufacturing solutions for men’s wear,
+  produced to buyer specifications.
+</p>
+
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-wrap gap-4 justify-center">
+
+        <button class="filter-btn px-6 py-2 border border-gray-900 bg-gray-900 text-white text-sm uppercase"
+        data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn px-6 py-2 border border-gray-300
+         text-sm uppercase transition
+         hover:border-gray-900"
+        data-filter="casual">
+          Casual Wear
+        </button>
+
+        <button class="filter-btn px-6 py-2 border border-gray-300
+         text-sm uppercase transition
+         hover:border-gray-900"
+        data-filter="formal">
+         Formal Wear
+        </button>
+
+        <button class="filter-btn px-6 py-2 border border-gray-300
+         text-sm uppercase transition
+         hover:border-gray-900"
+        data-filter="ethnic">
+          Ethnic Wear
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="pb-24">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Men shirts -->
+
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/shirt1.png"
+    alt="Men’s Shirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    Formal & casual shirts produced in bulk with custom fits and fabrics.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Linen, Twill · MOQ-based production
+  </p>
+  <div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+  </div>
+</div>
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/shirt2.png"
+    alt="Men’s Shirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+  </div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    Formal & casual shirts produced in bulk with custom fits and fabrics.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Linen, Twill · MOQ-based production
+  </p>
+  <div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+  </div>
+</div>
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/shirt3.png"
+    alt="Men’s Shirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    Formal & casual shirts produced in bulk with custom fits and fabrics.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Linen, Twill · MOQ-based production
+  </p>
+  <div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+  </div>
+</div>
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/shirt4.png"
+    alt="Men’s Shirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+  </div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    Formal & casual shirts produced in bulk with custom fits and fabrics.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Linen, Twill · MOQ-based production
+  </p>
+  <div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+  </div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote"
+       class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+
+    <a href="https://wa.me/916283449696"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+  <!-- Men tshirts -->
+
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="casual">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/tshirt1.png"
+    alt="Men’s Tshirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s T-Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    High-capacity knitwear production for brands and promotions.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Blends · GSM & fit customization
+  </p>
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="casual">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/tshirt2.png"
+    alt="Men’s Tshirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s T-Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    High-capacity knitwear production for brands and promotions.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Blends · GSM & fit customization
+  </p>
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="casual">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/tshirt3.png"
+    alt="Men’s Tshirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s T-Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    High-capacity knitwear production for brands and promotions.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Blends · GSM & fit customization
+  </p>
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="casual">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/tshirt4.png"
+    alt="Men’s Tshirt Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+  <h3 class="text-sm font-semibold">
+    Men’s T-Shirt Manufacturing
+  </h3>
+
+  <p class="text-xs text-gray-600 mt-1">
+    High-capacity knitwear production for brands and promotions.
+  </p>
+
+  <p class="text-xs text-gray-500 mt-1">
+    Fabrics: Cotton, Blends · GSM & fit customization
+  </p>
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+  <!--Suits-->
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/suit1.png"
+    alt="Men’s Formal Suit"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+<h3 class="text-sm font-semibold">
+  Men’s Formal Suit Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Premium tailored suits produced in bulk with precision fitting and export-quality finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Wool blends, Polyester, Terry Rayon · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/suit2.png"
+    alt="Men’s Formal Suit"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+<h3 class="text-sm font-semibold">
+  Men’s Formal Suit Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Premium tailored suits produced in bulk with precision fitting and export-quality finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Wool blends, Polyester, Terry Rayon · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/suit3.png"
+    alt="Men’s Formal Suit"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+<h3 class="text-sm font-semibold">
+  Men’s Formal Suit Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Premium tailored suits produced in bulk with precision fitting and export-quality finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Wool blends, Polyester, Terry Rayon · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+<div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="formal">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/suit4.png"
+    alt="Men’s Formal Suit"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+<h3 class="text-sm font-semibold">
+  Men’s Formal Suit Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Premium tailored suits produced in bulk with precision fitting and export-quality finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Wool blends, Polyester, Terry Rayon · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<!--Ethnic wear-->
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="ethnic">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/e1.png"
+    alt="Men’s Jacket Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+
+  <h3 class="text-sm font-semibold">
+  Men’s Kurta Pajama Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Traditional kurta pajama sets manufactured in bulk with modern fits and premium finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Cotton, Linen, Rayon, Silk Blends · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="ethnic">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/e2.png"
+    alt="Men’s Jacket Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+
+  <h3 class="text-sm font-semibold">
+  Men’s Kurta Pajama Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Traditional kurta pajama sets manufactured in bulk with modern fits and premium finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Cotton, Linen, Rayon, Silk Blends · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="ethnic">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/e3.png"
+    alt="Men’s Jacket Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+
+  <h3 class="text-sm font-semibold">
+  Men’s Kurta Pajama Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Traditional kurta pajama sets manufactured in bulk with modern fits and premium finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Cotton, Linen, Rayon, Silk Blends · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+  <div class="group product bg-white rounded-lg hover:shadow-lg transition-shadow duration-300" data-type="ethnic">
+  <div class="aspect-[3/4] bg-gray-100 mb-4 overflow-hidden">
+  <img
+    src="./images/men/e4.png"
+    alt="Men’s Jacket Manufacturing"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+  />
+</div>
+
+
+  <h3 class="text-sm font-semibold">
+  Men’s Kurta Pajama Manufacturing
+</h3>
+
+<p class="text-xs text-gray-600 mt-1">
+  Traditional kurta pajama sets manufactured in bulk with modern fits and premium finishing.
+</p>
+
+<p class="text-xs text-gray-500 mt-1">
+  Fabrics: Cotton, Linen, Rayon, Silk Blends · OEM / ODM supported
+</p>
+
+<div class="mt-2 flex flex-wrap gap-2">
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    MOQ: 300 pcs
+  </span>
+  <span class="text-[11px] px-2 py-1 border border-gray-300 text-gray-600">
+    Lead Time: 15–25 days
+  </span>
+</div>
+
+  <div class="mt-3 flex gap-3">
+    <a href="#quote" class="text-xs font-semibold text-red-600 hover:underline">
+      Get Bulk Quote
+    </a>
+    <a href="https://wa.me/916283449696" target="_blank" rel="noopener noreferrer"
+       class="text-xs text-gray-600 hover:underline">
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+      <!-- ABOUT -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-bold">
+          Quick Stitch Apparel
+        </h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          Premium wholesale clothing manufacturer from India, delivering quality to the world.
+        </p>
+
+        <div class="flex space-x-4">
+  <a href="#" aria-label="Facebook" class="hover:text-blue-400 transition">
+    <i data-lucide="facebook" class="w-5 h-5"></i>
+  </a>
+  <a href="#" aria-label="Instagram" class="hover:text-pink-400 transition">
+    <i data-lucide="instagram" class="w-5 h-5"></i>
+  </a>
+  <a href="#" aria-label="LinkedIn" class="hover:text-blue-300 transition">
+    <i data-lucide="linkedin" class="w-5 h-5"></i>
+  </a>
+  <a href="#" aria-label="Twitter" class="hover:text-sky-400 transition">
+    <i data-lucide="twitter" class="w-5 h-5"></i>
+  </a>
+</div>
+
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold">Quick Links</h3>
+        <nav class="flex flex-col space-y-2">
+          <a href="./men.html" class="text-sm hover:text-red-600 transition-colors">
+            Men
+          </a>
+          <a href="./women.html" class="text-sm hover:text-red-600 transition-colors">
+            Women
+          </a>
+          <a href="./kids.html" class="text-sm hover:text-red-600 transition-colors">
+            Kids
+          </a>
+          <a href="./manufacturing.html" class="text-sm hover:text-red-600 transition-colors">
+            Manufacturing
+          </a>
+          <a href="./About.html" class="text-sm hover:text-red-600 transition-colors">
+            About Us
+          </a>
+        </nav>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold">Contact</h3>
+
+        <div class="space-y-3 text-sm">
+          <a href="tel:+916283449696" class="flex items-center gap-2 text-sm hover:text-red-600 transition">
+  <i data-lucide="phone" class="w-4 h-4"></i>
+  <span>+91 6283449696</span>
+</a>
+
+<a href="mailto:quickstitchapparel@gmail.com" class="flex items-center gap-2 text-sm hover:text-red-600 transition">
+  <i data-lucide="mail" class="w-4 h-4"></i>
+  <span>quickstitchapparel@gmail.com</span>
+</a>
+
+<div class="flex items-start gap-2 text-sm hover:text-red-600 transition">
+  <i data-lucide="map-pin" class="w-4 h-4 mt-0.5"></i>
+  <span>India<br>Manufacturing Excellence Worldwide</span>
+</div>
+
+        </div>
+      </div>
+
+      <!-- GLOBAL SHIPPING -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold">Global Shipping</h3>
+        <p class="text-sm text-gray-300 leading-relaxed">
+          We export to over 50 countries worldwide. Our logistics partners ensure timely delivery with full tracking and insurance.
+        </p>
+
+        <ul class="text-sm space-y-1 text-gray-300">
+          <li>• USA & Canada</li>
+          <li>• Europe & UK</li>
+          <li>• Middle East</li>
+          <li>• Asia Pacific</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+      <p>
+        © <span id="year"></span> Quick Stitch Apparel. All rights reserved. Crafted in India.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+<script>
+  // 🔹 Mobile menu
+  const menuBtn = document.getElementById('menuBtn')
+  const mobileMenu = document.getElementById('mobileMenu')
+
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+  })
+
+  // 🔹 Sticky header
+  const stickyHeader = document.querySelector('.sticky')
+  if (stickyHeader) {
+    window.addEventListener('scroll', () => {
+      stickyHeader.classList.toggle('shadow-md', window.scrollY > 10)
+    })
+  }
+
+  // 🔹 Filters
+  const filterButtons = document.querySelectorAll('.filter-btn')
+  const products = document.querySelectorAll('.product')
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter
+
+      filterButtons.forEach(b =>
+        b.classList.remove('border-gray-900','bg-gray-900','text-white')
+      )
+
+      btn.classList.add('border-gray-900','bg-gray-900','text-white')
+
+      products.forEach(product => {
+        const types = (product.dataset.type || '').split(' ')
+        if (filter === 'all' || types.includes(filter)) {
+          product.classList.remove('hidden')
+        } else {
+          product.classList.add('hidden')
+        }
+      })
+    })
+  })
+
+  // 🔹 URL filter support
+  const params = new URLSearchParams(window.location.search)
+  let initialFilter = params.get('type')
+
+  const filterMap = {
+    shirts: 'formal',
+    tshirts: 'casual',
+    jeans: 'casual',
+    jackets: 'casual',
+    kurta: 'ethnic',
+    ethnic: 'ethnic'
+  }
+
+  if (filterMap[initialFilter]) {
+    document
+      .querySelector(`.filter-btn[data-filter="${filterMap[initialFilter]}"]`)
+      ?.click()
+  }
+
+  // 🔹 Active nav link
+  const navLinks = document.querySelectorAll('.nav-link')
+  const currentPage = window.location.pathname.split('/').pop()
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href').includes(currentPage)) {
+      link.classList.add('text-red-600','border-b-2','border-red-600')
+    }
+  })
+
+  // 🔹 Quote modal
+  const quoteModal = document.getElementById("quoteModal")
+  const closeQuote = document.getElementById("closeQuote")
+  const quoteForm = document.getElementById("quoteForm")
+
+  document.querySelectorAll('a[href="#quote"]').forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault()
+      quoteForm.reset()
+      quoteModal.classList.remove("hidden")
+      quoteModal.classList.add("flex")
+    })
+  })
+
+  closeQuote?.addEventListener("click", () => {
+    quoteModal.classList.add("hidden")
+    quoteModal.classList.remove("flex")
+  })
+
+  quoteModal?.addEventListener("click", e => {
+    if (e.target === quoteModal) {
+      quoteModal.classList.add("hidden")
+      quoteModal.classList.remove("flex")
+    }
+  })
+</script>
+
+
+  <!-- Bulk Quote Modal -->
+<div id="quoteModal"
+     class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+
+  <div class="bg-white w-full max-w-lg p-6 relative">
+    <button id="closeQuote"
+            class="absolute top-3 right-3 text-gray-500 hover:text-black">
+      ✕
+    </button>
+
+    <h3 class="text-lg font-semibold mb-4">
+      Request Bulk Quote
+    </h3>
+
+    <form class="space-y-3" id="quoteForm">
+      <input type="text" placeholder="Company Name" name="company"
+             class="w-full border px-3 py-2 text-sm">
+
+      <input type="text" placeholder="Contact Person" name="contact"
+             class="w-full border px-3 py-2 text-sm">
+
+      <input
+  type="tel"
+  name="phone"
+  placeholder="Phone / WhatsApp"
+  required
+  class="w-full border px-3 py-2 text-sm"
+/>
+
+
+      <input type="text" name="product" placeholder="Product Type (e.g. Shirts, T-Shirts)"
+             class="w-full border px-3 py-2 text-sm"/>
+
+     <input
+  type="text"
+  name="quantity"
+  placeholder="Estimated Quantity"
+  required
+  class="w-full border px-3 py-2 text-sm"
+/>
+
+      <textarea placeholder="Fabric / Custom Requirements" name="requirements"
+                class="w-full border px-3 py-2 text-sm"></textarea>
+
+      <button type="submit"
+              class="bg-red-600 text-white px-4 py-2 text-sm font-semibold hover:bg-red-700">
+        Submit Inquiry
+      </button>
+    </form>
+  </div>
+</div>
 </body>
 </html>

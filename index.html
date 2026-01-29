@@ -454,6 +454,28 @@
   lucide.createIcons();
 </script>
 
+<script>
+  const menuBtn = document.getElementById('menuBtn')
+  const mobileMenu = document.getElementById('mobileMenu')
 
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+  })
+
+  const stickyHeader = document.querySelector('.sticky')
+  if (stickyHeader) {
+    window.addEventListener('scroll', () => {
+      stickyHeader.classList.toggle('shadow-md', window.scrollY > 10)
+    })
+  }
+
+  const navLinks = document.querySelectorAll('.nav-link')
+  navLinks.forEach(link => {
+    if (link.getAttribute('href').includes('index.html')) {
+      link.classList.add('text-red-600','border-b-2','border-red-600')
+    }
+  })
+</script>
+    
 </body>
 </html>

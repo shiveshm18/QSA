@@ -974,14 +974,22 @@
   }
 
   // 🔹 Active nav link
-  const navLinks = document.querySelectorAll('.nav-link')
-  const currentPage = window.location.pathname.split('/').pop()
+ const navLinks = document.querySelectorAll(".nav-link");
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-  navLinks.forEach(link => {
-    if (link.getAttribute('href').includes(currentPage)) {
-      link.classList.add('text-red-600','border-b-2','border-red-600')
-    }
-  })
+navLinks.forEach(link => {
+  const linkPage = link.getAttribute("href")
+    ?.split("/")
+    .pop();
+
+  if (linkPage === currentPage) {
+    link.classList.add(
+      "text-red-600",
+      "border-b-2",
+      "border-red-600"
+    );
+  }
+});
 
   // 🔹 Quote modal
   const quoteModal = document.getElementById("quoteModal")
